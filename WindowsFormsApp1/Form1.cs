@@ -69,5 +69,32 @@ namespace WindowsFormsApp1
                 txtOutput.Text = "";
             }
         }
+
+        /// <summary>
+        /// 「実行」ボタンクリックイベント
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnExecute_Click(object sender, EventArgs e)
+        {
+            //入力ファイル及び出力ファイルの選択状況をチェック
+            if (txtInput.Text == "" || txtOutput.Text == "")
+            {
+                MessageBox.Show("入力ファイルまたは出力ファイルが選択されていません。");
+                return;
+            }
+            //◆◆◆　メイン処理　◆◆◆
+            //
+            //入出力ファイルがが共に指定された場合、入力ファイルを開く
+            Encoding encoding_SJIS = Encoding.GetEncoding("Shift_JIS");
+            int rcdCnt = 0;
+            using (StreamReader sr = new StreamReader(txtInput.Text, encoding_SJIS))
+            using (StreamWriter sw = new = new StreamWriter(txtOutput.Text, false, encoding_SJIS))
+            {
+
+            }
+        }
+
+
     }
 }
