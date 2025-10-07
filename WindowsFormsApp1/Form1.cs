@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             Encoding encoding_SJIS = Encoding.GetEncoding("Shift_JIS");
             int rcdCnt = 0;
             using (StreamReader sr = new StreamReader(txtInput.Text, encoding_SJIS))
-            using (StreamWriter sw = new = new StreamWriter(txtOutput.Text, false, encoding_SJIS))
+            using (StreamWriter sw = new StreamWriter(txtOutput.Text, false, encoding_SJIS))
             {
 
             }
