@@ -98,6 +98,7 @@
             this.btnExecute.TabIndex = 6;
             this.btnExecute.Text = "実行";
             this.btnExecute.UseVisualStyleBackColor = true;
+            this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click_1);
             // 
             // btnEnd
             // 
@@ -107,6 +108,7 @@
             this.btnEnd.TabIndex = 7;
             this.btnEnd.Text = "終了";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click_1);
             // 
             // frmMain
             // 
